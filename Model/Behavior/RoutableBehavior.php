@@ -34,10 +34,11 @@ class RoutableBehavior extends ModelBehavior
      *
      * @param object $Model An instance of the model attaching this behavior
      * @param boolean $created True if this save created a new record
+     * @param array $options Options passed from Model::save().
      * @return void
      * @link http://book.cakephp.org/2.0/en/models/callback-methods.html#aftersave
      */
-    public function afterSave(Model $Model, $created)
+    public function afterSave(Model $Model, $created, $options = array())
     {
         // Does the route template exist?
         if (empty($this->settings[$Model->alias]['template'])) {
