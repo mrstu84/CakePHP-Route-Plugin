@@ -29,7 +29,7 @@ class Route extends RouteAppModel
     public $validate = array(
         'name' => array(
             'notEmpty' => array(
-                'rule' => array('notEmpty'),
+                'rule' => array('notBlank'),
                 'message' => 'Please enter a route name. This is the "friendly" URL. For example: a-tale-of-two-cities',
                 'allowEmpty' => false,
                 'required' => true,
@@ -37,7 +37,7 @@ class Route extends RouteAppModel
         ),
         'value' => array(
             'notEmpty' => array(
-                'rule' => array('notEmpty'),
+                'rule' => array('notBlank'),
                 'message' => 'Please enter a route value. This is the "system" URL. For example: posts/view/123',
                 'allowEmpty' => false,
                 'required' => true,
