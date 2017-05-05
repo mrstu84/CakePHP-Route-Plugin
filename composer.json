@@ -1,0 +1,24 @@
+{
+    "name": "mrstu84/cakephp-route-plugin",
+    "description": "Routing plugin for CakePHP",
+    "type": "cakephp-plugin",
+    "homepage": "https://github.com/mrstu84/CakePHP-Route-Plugin",
+    "require": {
+        "cakephp/cakephp": "~2.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stewart Doxey",
+            "email": "hello@stewartdoxey.co.uk",
+            "role": "Contributor"
+        },
+        {
+            "name": "Pollenizer",
+            "role": "Author"
+        }
+    ],
+    "extra": {
+        "installer-name": "Route"
+    }
+}
